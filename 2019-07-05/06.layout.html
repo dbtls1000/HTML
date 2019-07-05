@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title{
+            background-color: green;
+            text-align: center;
+            color: blue;
+            padding:2rem;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+        }
+        /*
+            inherit
+            자신을 감싸고 있는 tag에 적용된 style을 상속받아 적용
+        */
+        a{
+            color: inherit;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 0.5rem;
+        }
+        address{
+            text-align: center;
+        }
+        /*
+            selector를 ㅓㅁ마로 여러개 지정하면
+            공통된 속성을 함께 지정할 수 있다.
+        */
+        #ar1, #ar2, #ar3, .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        #ar2{
+            width:50%;
+        }
+        /*
+            margin 값에 top과 bottom을 임의 값으로 설정하고
+            left right는 자동설정함으로해서
+            box를 가운데 정렬하는 효과
+        */
+        #ar3{
+            width:50%;
+            margin:0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h3 id="title">
+            Layout 연습
+        </h3>
+     </header>
+     <nav>
+         <a href="https://naver.com">네이버</a>&nbsp;&nbsp;
+         <a href="https://daum.net">다음</a>&nbsp;&nbsp;
+         <a href="https://google.com">구글</a>&nbsp;&nbsp;
+     </nav>
+     <section>
+        <article id="ar1" class="arclass">
+            군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다. 대한민국은 통일을 지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고 이를 추진한다. 근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.
+        </article>
+        <article id="ar2" class="arclass">
+            이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 그 자격을 상실한 때에는 60일 이내에 후임자를 선거한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다.
+        </article>
+        <article id="ar3" class="arclass">
+            헌법개정안이 제2항의 찬성을 얻은 때에는 헌법개정은 확정되며, 대통령은 즉시 이를 공포하여야 한다. 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다. 원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.
+        </article>
+     </section>
+     <footer>
+         <address>CopyRight &copy; dbsqhtjs@naver.com</address>
+     </footer>
+</body>
+</html>
