@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h2{
+            color: #ff6f69;
+            text-align: center;
+        }
+        ul.list{
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-gap: 2px; /* item들간의 간격 */
+            grid-template-columns: 1fr 1fr; /* 칼럼의개수 */
+            grid-auto-rows: 80px; /* 자동으로 */
+        }
+        /* li tag를 2칸을 1칸으로 합친다 */
+        ul.list li:nth-child(1){
+            grid-column: 1/ span 2;
+        }
+        ul.list li:nth-child(6){
+            grid-column: 1/ span 2;
+        }
+        ul.list li{
+            background-color: #88d8b0;
+            /* 상자내의 content를 가로세로 중앙 정렬 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: black;
+            font-weight: 800;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <h2>Grid css Layout</h2>
+    <ul class="list">
+        <li>대 한 민 국</li>
+        <li>우 리 나 라</li>
+        <li>Republic of Korea</li>
+        <li>Republic of Korea</li>
+        <li>대 한 민 국</li>
+        <li>우 리 나 라</li>
+    </ul>
+</body>
+</html>
