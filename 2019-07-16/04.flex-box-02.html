@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /*
+            flex-box
+            blocktag들을 감싸고 있는 black tag에
+            display:block으로 설점함으로서
+            모든 기본 flex-box설정이 완료된다.
+        */
+        .flex-container{
+            display: flex;
+            flex-direction: row; /* 기본값으로 가로 방향 */
+            flex-direction: row-reverse; /* 가로 역순 배치 */
+            flex-wrap: nowrap; /* 기본값 ,item width 합이 화면을 벗어나면 줄여라*/
+            flex-wrap: wrap;/* 화면이 item의 width 합보다 작아지면 줄바꿈 */
+        }
+        div{
+            display: block;
+            border: 1px solid black;
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>flex item1</div>
+        <div>flex item2</div>
+        <div>flex item3</div>
+        <div>flex item4</div>
+        <div>flex item5</div>
+        <div>flex item5</div>
+        <div>flex item6</div>
+        <div>flex item7</div>
+        <div>flex item9</div>
+        <div>flex item0</div>
+    </div>
+
+</body>
+</html>

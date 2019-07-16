@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* 1.모든 box들에 display 속성을 inline-block으로 설정해야 한다.
+            2. vertical-align:top 으로 설정하고 layout 배치를 시작
+            3. inlineblock으로 배치할 칼럼box들은 tag를 비난 enter로 분리하지 말아야 한다.*/
+        .i-box {
+            display: inline-block;
+            border: 1px solid blue;
+            width: 70%;
+            margin: 0;
+            vertical-align: top;
+        }
+
+        
+        nav {
+            display: inline-block;
+            border: 1px solid red;
+            width: 25%;
+            vertical-align: top;
+            margin: 0;
+        }
+        div.box{
+            border: 1px solid red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ul>
+    </nav>
+    <div class="i-box">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore illo? Debitis ad laudantium
+            eius nihil, soluta nulla. Repellendus hic iusto excepturi debitis ad eius tenetur perspiciatis quia ullam
+            voluptatum!Fuga qui provident velit consequuntur ipsa </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laborum necessitatibus facilis
+            laboriosam nisi, numquam nobis temporibus blanditiis natus, explicabo consequatur ab. Atque et veritatis
+            voluptatem asperiores dolores sunt aliquam.</div>
+    </div>
+</body>
+
+</html>

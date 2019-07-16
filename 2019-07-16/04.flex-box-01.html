@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /*
+            flex-box
+            blocktag들을 감싸고 있는 black tag에
+            display:block으로 설점함으로서
+            모든 기본 flex-box설정이 완료된다.
+        */
+        .flex-container{
+            display: flex;
+        }
+        div,p{
+            display: block;
+            border: 1px solid black;
+            margin: 0;
+            padding: 10px;
+        }
+        .flex-container li{
+            display: block;
+            width: 100px;
+            border: 1px skyblue solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <div>flex item</div>
+        <p>나는 p이다</p>
+    </div>
+
+    <ul class="flex-container">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+</body>
+</html>
